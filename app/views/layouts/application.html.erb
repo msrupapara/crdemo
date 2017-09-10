@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crdemo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+	  <nav class="navbar navbar-inverse navbar-static-top"> 
+	    <div class="container-fluid">
+	    	<ul class="nav navbar-nav">
+	    		<li><%= link_to 'Products', products_path %></li>
+	    	</ul>
+	    </div>
+	  </nav>
+	    	<%= yield %>
+	    
+  </body>
+</html>
